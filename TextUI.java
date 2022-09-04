@@ -1,8 +1,9 @@
 // Class TextUI for program HelloWorld
-// version 1.01.00-gamma by Ray Arias
-// 27 August 2022
+// version 1.01.01-delta(rc)-Model T
+// by Ray Arias, 31 August 2022
 
-package HelloWorld;
+// subpackage: TextUI, version 1.01.01-delta(rc)-Model T
+// semantic version 1.1.1-rc
 
 import java.util.Scanner;
 
@@ -33,6 +34,7 @@ public class TextUI {
   // the Scanner object and returns it.
   public static double readdbl(Scanner scanner) {
     double result = scanner.nextDouble();
+    scanner.nextLine();
     return result;
   }
 
@@ -40,6 +42,7 @@ public class TextUI {
   // the Scanner object and returns it.
   public static int readint(Scanner scanner) {
     int result = scanner.nextInt();
+    scanner.nextLine();
     return result;
   }
   
@@ -59,7 +62,14 @@ public class TextUI {
     String result = TextUI.readln(scanner);
     TextUI.closeUI(scanner);
     return result;
-  }	
+  }	 // THIS METHOD NEEDS FIXING
+  
+  // Sends characters to the console to
+  // clear the screen.
+  public static void clrscn() {
+     TextUI.display("\033[H");
+     TextUI.display("\033[2J");
+  }
   
   // This method returns the numerical
   // value of a char as an int.

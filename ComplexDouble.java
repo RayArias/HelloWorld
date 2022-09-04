@@ -1,9 +1,10 @@
 // Class ComplexDouble for
 // program HelloWorld by Ray Arias
-// version 1.00.00-delta-Tha)es of Miletis
-// 27 August 2022
+// version 1.00.01-delta(rc)-Thales of Miletis
+// 03 September 2022
 
-package HelloWorld.QuadraticFormula;
+// subpackage: QuadraticFormula, version 1.00.01-delta(rc)-Thales of Miletis
+// semantic version 1.0.1-rc
 
 public class ComplexDouble {
     double re;
